@@ -1,0 +1,41 @@
+.pasarela {
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.pasarela ul {
+    display: flex;
+    padding: 0px;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.pasarela li {
+    width: 100%;
+    list-style: none;
+    border: 5px 5px 0px 5px solid #000000;
+    padding-bottom: 0px;
+}
+
+.pasarela img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #f7f4f4;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}

@@ -1,0 +1,336 @@
+#banner-galeria {
+    position: relative;
+}
+
+#banner-galeria img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffffff;
+}
+
+#banner-galeria .container-galeria {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-300%);
+}
+
+#banner-galeria a {
+    display: block;
+    height: 25px;
+    width: 80px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    border: 1px solid #524f4f;
+}
+
+#banner-galeria a:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+/* Discografia */
+
+#banner-discografia {
+    position: relative;
+}
+
+#banner-discografia img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #7c7a7a;
+}
+
+#banner-discografia .container-discografia {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-300%);
+}
+
+#banner-discografia a {
+    display: block;
+    height: 25px;
+    width: 150px;
+    text-decoration: none;
+    color: #000000;
+    background: #7c7a7a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    border: 1px solid #000000;
+}
+
+#banner-discografia a:hover {
+    background: rgba(160, 152, 152, 0.5);
+}
+
+/*Tour */
+
+#banner-tour {
+    position: relative;
+}
+
+#banner-tour img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffffff;
+}
+
+#banner-tour .container-tour {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+}
+
+#banner-tour a {
+    display: block;
+    height: 25px;
+    width: 150px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #d31a1a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    border: 1px solid #ffffff;
+}
+
+#banner-tour a:hover {
+    background: rgba(219, 14, 14, 0.5);
+}
+
+/*Contacto */
+
+#banner-contacto {
+    position: relative;
+}
+
+#banner-contacto img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #161733;
+}
+
+#banner-contacto .container-contacto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(190%);
+}
+
+#banner-contacto a {
+    display: block;
+    height: 25px;
+    width: 100px;
+    text-decoration: none;
+    color: #524f4f;
+    background: #030220;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    border: 1px solid #1c0855;
+}
+
+#banner-contacto a:hover {
+    background: rgba(5, 7, 46, 0.5);
+}
+
+@media(min-width: 480px) {
+    #banner-galeria img {
+        width: 100%;
+        height: 200px;
+    }
+
+    #banner-discografia img {
+        width: 100%;
+        height: 200px;
+    }
+
+    #banner-tour img {
+        width: 100%;
+        height: 200px;
+    }
+
+    #banner-contacto img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media(min-width: 768px) {
+    /*Galeria*/
+    #banner-galeria img {
+        width: 100%;
+        height: 300px;
+    }
+
+    #banner-galeria .container-galeria {
+        transform: translateX(-90%) translateY(-400%);
+    }
+
+    #banner-galeria a {
+        height: 35px;
+        width: 90px;
+        border-radius: 15px;
+        border: 2px solid #524f4f;
+        font-size: 18px;
+    }
+
+    /*Discografia*/
+
+    #banner-discografia img {
+        width: 100%;
+        height: 300px;
+    }
+
+    #banner-discografia .container-discografia {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-68%) translateY(-350%);
+    }
+
+    #banner-discografia a {
+        height: 35px;
+        width: 170px;
+        border-radius: 15px;
+        border: 2px solid #000000;
+        font-size: 18px;
+    }
+
+    /*Tour*/
+
+    #banner-tour img {
+        width: 100%;
+        height: 300px;
+    }
+
+    #banner-tour .container-tour {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(50%) translateY(0%);
+    }
+    
+    #banner-tour a {
+        height: 35px;
+        width: 170px;
+        border-radius: 15px;
+        padding: 0px 0px 10px 0px;
+        border: 2px solid #ffffff;
+        font-size: 18px;
+    }
+
+    /*Contacto*/
+
+    #banner-contacto img {
+        width: 100%;
+        height: 300px;
+    }
+
+    #banner-contacto .container-contacto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-60%) translateY(220%);
+    }
+    
+    #banner-contacto a {
+        height: 35px;
+        width: 100px;
+        border-radius: 15px;
+        border: 2px solid #1c0855;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1024px) {
+    /*Galeria*/
+    #banner-galeria img {
+        width: 100%;
+        height: 500px;
+    }
+
+    #banner-galeria .container-galeria {
+        transform: translateX(-60%) translateY(-400%);
+    }
+
+    #banner-galeria a {
+        height: 55px;
+        width: 140px;
+        border-radius: 17px;
+        border: 2px solid #524f4f;
+        font-size: 30px;
+    }
+
+    /*Discografia*/
+
+    #banner-discografia img {
+        width: 100%;
+        height: 500px;
+    }
+
+    #banner-discografia .container-discografia {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-350%);
+    }
+
+    #banner-discografia a {
+        height: 55px;
+        width: 350px;
+        border-radius: 15px;
+        border: 2px solid #000000;
+        font-size: 30px;
+    }
+
+    /*Tour*/
+
+    #banner-tour img {
+        width: 100%;
+        height: 500px;
+    }
+
+    #banner-tour .container-tour {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(50%) translateY(0%);
+    }
+    
+    #banner-tour a {
+        height: 55px;
+        width: 350px;
+        border-radius: 15px;
+        padding: 0px 0px 10px 0px;
+        border: 2px solid #ffffff;
+        font-size: 30px;
+    }
+
+    /*Contacto*/
+
+    #banner-contacto img {
+        width: 100%;
+        height: 500px;
+    }
+
+    #banner-contacto .container-contacto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-60%) translateY(220%);
+    }
+    
+    #banner-contacto a {
+        height: 55px;
+        width: 150px;
+        border-radius: 15px;
+        border: 2px solid #1c0855;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,40 @@
+.presentacion {
+    color: #ffffff;
+    margin: 10px 25px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #635c5c;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+.presentacion a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+    .presentacion {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .presentacion {
+        font-size: 18px;
+        width: 85%;
+        justify-content: center;
+        margin: 10px 20px 15px 58px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .presentacion {
+        font-size: 25px;
+        width: 75%;
+        justify-content: center;
+        margin: 10px 20px 25px 165px;
+    }
+}

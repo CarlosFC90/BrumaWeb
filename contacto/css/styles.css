@@ -1,0 +1,150 @@
+@import url(menu.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto mantiene todo en su lugar*/
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='46' viewBox='0 0 70 46'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d82b1a' fill-opacity='0.10'%3E%3Cpolygon points='68 44 62 44 62 46 56 46 56 44 52 44 52 46 46 46 46 44 40 44 40 46 38 46 38 44 32 44 32 46 26 46 26 44 22 44 22 46 16 46 16 44 12 44 12 46 6 46 6 44 0 44 0 42 8 42 8 28 6 28 6 0 12 0 12 28 10 28 10 42 18 42 18 28 16 28 16 0 22 0 22 28 20 28 20 42 28 42 28 28 26 28 26 0 32 0 32 28 30 28 30 42 38 42 38 0 40 0 40 42 48 42 48 28 46 28 46 0 52 0 52 28 50 28 50 42 58 42 58 28 56 28 56 0 62 0 62 28 60 28 60 42 68 42 68 0 70 0 70 46 68 46'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    height: 45px;
+    background: #333333;
+    color: #ffffff;
+    background: linear-gradient(black, rgb(117, 25, 25));
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /*Esto es para que se posicione delante de todo los elementos*/
+}
+
+.container {
+    width: 98%;
+    margin: auto;
+}
+.container img {
+    width: 75px;
+    height: 30px;
+    float: left;
+    margin: 6px 0px;
+    cursor: not-allowed;
+}
+
+.container h1 {
+    display: none;
+}
+
+header .container {
+    display: table; /* Esto es para limpiar los display y que queden todos juntos */
+}
+
+main {
+    margin-top: 15px;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#contacto {
+    margin-top: 70px;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+    background: rgba(41, 33, 33, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box; /*Esto es para que todo quede adentro de una caja y no se salga para ningun lado, con esto el padding va hacia adentro del formulario y no se va hacia afuera*/
+    border-radius: 7px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+form h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+}
+
+#boton {
+    background: #31384a;
+    color: #ffffff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+    transition: ease-out;
+}
+
+.hr-footer {
+    margin-top: 20px;
+    background: #2f333b;
+}
+
+.footer-contacto {
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        border-radius: 15px;
+    }
+
+    .container {
+        width: 1300px;
+    }
+
+    .container h1 {
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        color: #5e5b5b;
+        margin-left: 200px;
+        cursor: not-allowed;
+    }
+
+    .icon-mail {
+        cursor: alias;
+    }
+
+    .footer-contacto h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media(min-width: 480px) {
+    form {
+        width: 400px;
+        border-radius: 10px;
+    }
+}
